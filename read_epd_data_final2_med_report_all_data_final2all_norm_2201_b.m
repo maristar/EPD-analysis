@@ -57,7 +57,7 @@ for o=1:global_N_File %Loop start
   %% Make a table from the csv file
   % like in excel - add 2nd +0.0013rd column for Hp10 og 4th+0.0001*5th column 
     T2 = readtable(excelfile_name);
-    %readtable('AlexanderSherwaniSave As.csv');
+    %readtable('NameSurname.csv');
     SizeTable= size(T2);
     rows=SizeTable(1);
     
@@ -441,10 +441,10 @@ for o = 1:N_File %Loop start
 end
 
 ch=Chapter;
-ch.Title="Agnell Kristina";
+ch.Title="*";
 ch.Numbered=true; 
 add(rpt, ch);
-T=Text("Det var ikke noe data for Agnell Kristina");
+T=Text("Det var ikke noe data for *");
 T.FontSize="12pt";
 T.Italic=true;
 add(rpt, T);
